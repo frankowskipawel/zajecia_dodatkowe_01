@@ -63,4 +63,18 @@ class StudentUtilSpec extends Specification{
         then: "checking if the result of Stub is correct"
         failedStudents == [new Student(1, "A","B",[2,2,4], 2.67)]
     }
+
+    def "Mock Stub combination"(){
+        given: "Creating Mock for Repository"
+        def mockedRepository = Mock(StudentRepository.class)
+        def studentUtil = new StudentUtil(mockedRepository)
+        1*mockedRepository.getAllStudents() >> studentListWithResults
+        1*mockedRepository.getStudentById(_ as Integer) >> new Student(123,'t', 't', [3,3,5], 3.66)
+
+        when:
+        boolean isBetter = studentUtil.isStudentIsBetterThanAverage(123)
+
+        then: "Stubing called methods, checking if the final condition is correct"
+        isBetter
+    }
 }

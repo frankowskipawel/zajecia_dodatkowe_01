@@ -251,7 +251,7 @@ div.footer {
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Sat Aug 01 11:00:03 CEST 2020 by frank</div>
+<div class='date-test-ran'>Created on Sat Aug 01 11:30:11 CEST 2020 by frank</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -268,7 +268,7 @@ div.footer {
 <td>0</td>
 <td>0</td>
 <td>100,0%</td>
-<td>0,090 seconds</td>
+<td>0,130 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -291,7 +291,10 @@ div.footer {
 <a href='#1591626795' class='feature-toc-ignored'>Mock data checks</a>
 </li>
 <li>
-<a href='#1562849237' class='feature-toc-pass'>Stubing data checks</a>
+<a href='#1562849237' class='feature-toc-ignored'>Stubing data checks</a>
+</li>
+<li>
+<a href='#839416371' class='feature-toc-pass'>Mock Stub combination</a>
 </li>
 </ul>
 <tr>
@@ -398,7 +401,7 @@ div.footer {
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='1562849237'>
+<div class='feature-description ignored' id='1562849237'>
 <span>Stubing data checks</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
@@ -428,6 +431,40 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>checking if the result of Stub is correct</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='839416371'>
+<span>Mock Stub combination</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>Creating Mock for Repository</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Stubing called methods, checking if the final condition is correct</div>
 </td>
 </tr>
 </tbody>
